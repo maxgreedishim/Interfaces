@@ -15,7 +15,6 @@ public class Main {
             car.speedDown();
             System.out.println(bike.showSpeed());
             System.out.println(car.showSpeed());
-
         }
     }
 }

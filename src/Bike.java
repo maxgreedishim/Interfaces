@@ -6,16 +6,18 @@ class Bike extends Vehicle implements Acсelerable{
 
     @Override
     public void speedUp() {
-        this.setSpeed(5);
+
+        setSpeed(5);
     }
 
     @Override
     public void speedDown() {
-        this.setSpeed(-5);
+
+        setSpeed(-5);
     }
 
     @Override
     public String showSpeed() {
-        return "Скорость велосипеда: " + this.getSpeed();
+        return "Скорость велосипеда: " + getSpeed();
     }
 }

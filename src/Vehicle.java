@@ -2,10 +2,12 @@ class Vehicle {
     private double speed;
 
     Vehicle(int speed) { // int в double можно превращать
+
         this.speed = speed;
     }
 
     int getSpeed() {
+
         return (int)Math.round(speed);
     }
 

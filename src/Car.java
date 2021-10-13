@@ -5,16 +5,19 @@ class Car extends Vehicle implements Acсelerable {
 
     @Override
     public void speedUp() {
+
         setSpeed(20);
     }
 
     @Override
     public void speedDown() {
+
         setSpeed(-20);
     }
 
     @Override
     public String showSpeed() {
-        return "Скорость автомабиля: " + this.getSpeed();
+
+        return "Скорость автомабиля: " + getSpeed();
     }
 }
