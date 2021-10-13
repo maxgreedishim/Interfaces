@@ -1,6 +1,6 @@
 class Car extends Vehicle implements Acсelerable {
     Car() {
-        super(60);
+        super(60, 300, "Бип - Бип");
     }
 
     @Override
@@ -19,5 +19,15 @@ class Car extends Vehicle implements Acсelerable {
     public String showSpeed() {
 
         return "Скорость автомабиля: " + getSpeed();
+    }
+
+    @Override
+    public String honk() {
+        return "Сигнал автомобиля: " + getSignal();
+    }
+
+    @Override
+    public int showCarrying() {
+        return getCarrying();
     }
 }
