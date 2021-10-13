@@ -1,4 +1,4 @@
-class Bike extends Vehicle implements Acсelerable{
+class Bike extends Vehicle implements Acсelerable, Runnable{
 
     Bike() {
         super(15);
@@ -19,5 +19,10 @@ class Bike extends Vehicle implements Acсelerable{
     @Override
     public String showSpeed() {
         return "Скорость велосипеда: " + getSpeed();
+    }
+
+    @Override
+    public void run() {
+
     }
 }
