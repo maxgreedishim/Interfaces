@@ -1,15 +1,18 @@
-public class Lorry extends Vehicle implements Acсelerable{
-    public Lorry() {
+class Lorry extends Vehicle implements Acсelerable{
+
+    Lorry() {
         super(30,20000,"Фа-Фа");
     }
 
     @Override
     public void speedUp() {
+
         setSpeed(30);
     }
 
     @Override
     public void speedDown() {
+
         setSpeed(-30);
     }
 
@@ -21,11 +24,13 @@ public class Lorry extends Vehicle implements Acсelerable{
 
     @Override
     public String honk() {
+
         return "Сигнал грузовика: " + getSignal();
     }
 
     @Override
     public int showCarrying() {
+
         return getCarrying();
     }
 }

@@ -4,6 +4,7 @@ class Vehicle {
     private String signal;
 
 
+
     Vehicle(int speed, int carrying, String signal) { // int в double можно превращать
         this.speed = speed;
         this.carrying = carrying;
@@ -24,7 +25,7 @@ class Vehicle {
     }
 
     public void setSpeed(double speed) {
-        if (speed > 100) return;
+        if (speed > 100 || speed <= 0) return;
         this.speed += speed * Math.random();
 
     }

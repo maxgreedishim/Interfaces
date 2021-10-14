@@ -1,4 +1,5 @@
 class Car extends Vehicle implements Acсelerable {
+
     Car() {
         super(60, 300, "Бип - Бип");
     }

@@ -11,7 +11,6 @@ public class Main {
         vehicles.add(car);
         vehicles.add(bike);
         vehicles.add(lorry);
-        vehicles.add(new Car());
         System.out.println("Начальная скорость велосипеда: " + ((Vehicle)bike).getSpeed() + " км/ч");
         System.out.println("Грузоподъемность велосипеда: " + bike.showCarrying() + " кг");
         System.out.println(bike.honk() + "\n");
@@ -22,7 +21,7 @@ public class Main {
         System.out.println("Грузоподъемность грузовика: " + lorry.showCarrying() + " кг");
         System.out.println(lorry.honk() + "\n");
 
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             bike.speedUp();
             car.speedUp();
             lorry.speedUp();
@@ -31,20 +30,46 @@ public class Main {
             System.out.println(lorry.showSpeed());
             bike.speedDown();
             car.speedDown();
+            lorry.speedDown();
             System.out.println(bike.showSpeed());
             System.out.println(car.showSpeed());
-            System.out.println("About bike: ");
-            System.out.println(bike instanceof Acсelerable);
-            System.out.println(bike instanceof Vehicle);
-            System.out.println(bike instanceof Car);
-            System.out.println(bike instanceof Runnable);
-            System.out.println("About car: ");
-            System.out.println(car instanceof Acсelerable);
-            System.out.println(car instanceof Vehicle);
-            System.out.println(car instanceof Bike);
+            System.out.println(lorry.showSpeed() );
         }
+
+            System.out.println("\n" +"About bike: ");
+            if (bike instanceof Acсelerable == true) System.out.println("Велосипед наследует интерфейсу Accelerable");
+            else System.out.println("Велосипед НЕ наследует интерфейсу Accelerable");
+            if (bike instanceof Vehicle == true)System.out.println("Велосипед наследует класс Vehicle");
+            else System.out.println("Велосипед НЕ наследует класс Vehicle");
+            if (bike instanceof Car == true)System.out.println("Велосипед наследует класс Car");
+            else System.out.println("Велосипед НЕ наследует класс Car");
+            if (bike instanceof Runnable == true)System.out.println("Велосипед наследует класс Runnable" + "\n");
+            else System.out.println("Велосипед НЕ наследует класс Runnable" + "\n");
+
+            System.out.println("About car: ");
+            if (car instanceof Acсelerable == true) System.out.println("Автомобиль наследует интерфейсу Accelerable");
+            else System.out.println("Автомобиль НЕ наследует интерфейсу Accelerable");
+            if (car instanceof Vehicle == true)System.out.println("Автомобиль наследует класс Vehicle");
+            else System.out.println("Автомобиль НЕ наследует класс Vehicle");
+            if (car instanceof Bike == true)System.out.println("Автомобиль наследует класс Bike");
+            else System.out.println("Автомобиль НЕ наследует класс Car");
+            if (car instanceof Runnable == true)System.out.println("Автомобиль наследует класс Runnable" + "\n");
+            else System.out.println("Автомобиль НЕ наследует класс Runnable" + "\n");
+
+            System.out.println("About lorry: ");
+            if (lorry instanceof Acсelerable == true) System.out.println("Грузовик наследует интерфейсу Accelerable");
+            else System.out.println("Грузовик НЕ наследует интерфейсу Accelerable");
+            if (lorry instanceof Vehicle == true)System.out.println("Грузовик наследует класс Vehicle");
+            else System.out.println("Грузовик НЕ наследует класс Vehicle");
+            if (lorry instanceof Bike == true)System.out.println("Грузовик наследует класс Bike");
+            else System.out.println("Грузовик НЕ наследует класс Car");
+            if (lorry instanceof Runnable == true)System.out.println("Автомобиль наследует класс Runnable" + "\n");
+            else System.out.println("Грузовик НЕ наследует класс Runnable" + "\n");
+
         for (Acсelerable v : vehicles){
-            System.out.println("Обнаружен " + (v instanceof Car ? "автомобиль" : "велосипед"));
+            if (v instanceof Lorry == true) System.out.println("Обнаружен грузовик");
+            if (v instanceof Car == true) System.out.println("Обнаружен автомобиль");
+            if (v instanceof Bike == true) System.out.println("Обнаружен велосипед");
         }
 
     }

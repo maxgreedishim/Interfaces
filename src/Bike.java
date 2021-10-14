@@ -1,6 +1,7 @@
 class Bike extends Vehicle implements Acсelerable, Runnable{
 
     Bike() {
+
         super(15,20, "Дзынь - Дзынь");
     }
 
