@@ -47,9 +47,9 @@ public class CompareVehicle {
         Collections.sort(allVehicles);
         Set<Vehicle> efficiency = new HashSet<>(allVehicles);
         for (Vehicle vehicle : efficiency) {
-            System.out.print((Collections.frequency(allVehicles, vehicle) >= 2) ? "Эффективный: "
+            System.out.print((Collections.frequency(allVehicles, vehicle) >= 2) ? "Эффективней "
                     + vehicle.getClass().getName() + ": "
-                    + "привосходит по " + Collections.frequency(allVehicles, vehicle) + "-ом параметрам"
+                    + "привосходит по " + Collections.frequency(allVehicles, vehicle) + "-ом параметрам."
                     + "\n": "");
         }
     }
