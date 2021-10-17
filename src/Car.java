@@ -1,7 +1,7 @@
 class Car extends Vehicle implements Acсelerable {
 
     Car() {
-        super(60, 300, "Бип - Бип");
+        super(60, 300, "Бип - Бип",50,7, 49);
     }
 
     @Override
@@ -31,4 +31,6 @@ class Car extends Vehicle implements Acсelerable {
     public int showCarrying() {
         return getCarrying();
     }
+
+
 }

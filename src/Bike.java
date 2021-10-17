@@ -2,9 +2,8 @@ class Bike extends Vehicle implements Acсelerable, Runnable{
 
     Bike() {
 
-        super(15,20, "Дзынь - Дзынь");
+        super(15,200000, "Дзынь - Дзынь", 7, 3, 45);
     }
-
 
     @Override
     public void speedUp() {
@@ -32,6 +31,7 @@ class Bike extends Vehicle implements Acсelerable, Runnable{
     public int showCarrying() {
         return getCarrying();
     }
+
 
     @Override
     public void run() {
