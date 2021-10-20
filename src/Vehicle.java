@@ -60,5 +60,6 @@ class Vehicle implements Comparable<Vehicle>{
             case BY_PRICE -> Integer.compare(v.getPrice(), this.getPrice());
             
         };
+
     }
 }
