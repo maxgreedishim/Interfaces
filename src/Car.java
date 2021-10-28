@@ -1,4 +1,4 @@
-class Car extends Vehicle implements Acсelerable {
+class Car extends Vehicle implements Accelerable {
 
     Car() {
         super(60, 300, "Бип - Бип",50,7, 49);

@@ -1,4 +1,4 @@
-class Lorry extends Vehicle implements Acсelerable {
+class Lorry extends Vehicle implements Accelerable {
 
 
     Lorry() {super(30,20000,"Сигнал - Сигнал",400, 30, 51);}

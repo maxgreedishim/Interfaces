@@ -1,4 +1,4 @@
-class Bike extends Vehicle implements Acсelerable, Runnable{
+class Bike extends Vehicle implements Accelerable, Runnable{
 
     Bike() {
 

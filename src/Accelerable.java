@@ -1,4 +1,4 @@
-public interface Acсelerable {
+public interface Accelerable {
     void speedUp();
     void speedDown();
     String showSpeed();

@@ -42,12 +42,10 @@ class Vehicle implements Comparable<Vehicle>{
     double getShowDistance(){
         return (100 / consumption) * getRefueling();
     }
+
     int getPrice () {
         return priceOneLiter * refueling;
     }
-    /*int getEfficiency () {
-        return ;
-    }*/
 
     @Override
     public int compareTo(Vehicle v) {
@@ -58,7 +56,6 @@ class Vehicle implements Comparable<Vehicle>{
             case BY_LOUDNESS -> Integer.compare(v.getSignal().length(), this.getSignal().length());
             case BY_DISTANCE -> Double.compare(v.getShowDistance(), this.getShowDistance());
             case BY_PRICE -> Integer.compare(v.getPrice(), this.getPrice());
-            
         };
 
     }
